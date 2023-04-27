@@ -1,0 +1,20 @@
+Source: python-vconnector
+Priority: optional
+Maintainer: Sergey Stolyarov <sergei@regolit.com>
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               python3-all,
+               python3-setuptools
+Standards-Version: 4.6.0
+Section: python
+Homepage: https://github.com/dnaeon/py-vconnector
+Vcs-Git: https://github.com/dnaeon/py-vconnector.git
+
+Package: python3-vconnector
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+Description: vConnector is a wrapper module around pyVmomi VMware vSphere bindings
+ The purpose of vConnector is to provide the basic primitives for building complex applications. vConnector can also be
+ used for managing the user/pass/host credentials for your vSphere environment using an SQLite database, which in turn
+ can be shared between multiple applications requiring access to your vSphere environment through a common interface.
